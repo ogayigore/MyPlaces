@@ -67,6 +67,7 @@
                                     <outlet property="locationLabel" destination="NeI-U5-Dra" id="jqx-JJ-e7t"/>
                                     <outlet property="nameLabel" destination="dpn-HS-aoO" id="ns4-Yd-Icx"/>
                                     <outlet property="typeLabel" destination="Yxl-mx-dNi" id="LSe-oe-GMl"/>
+                                    <segue destination="TSk-CK-Kb6" kind="show" identifier="showDetail" id="4tE-5v-wSH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -255,7 +256,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpO-md-gHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="8P6-ZD-OH3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1624.8" y="7.6461769115442282"/>
+            <point key="canvasLocation" x="926" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v2Z-x8-0mp">
@@ -292,9 +293,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOv-Wx-SFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="8"/>
+            <point key="canvasLocation" x="926" y="-726"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4tE-5v-wSH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="195" height="196"/>
     </resources>
