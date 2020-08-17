@@ -76,7 +76,7 @@
                             <outlet property="delegate" destination="FX2-Az-3a4" id="Quy-C1-QRW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Places" id="clr-XC-sz4">
+                    <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="clr-XC-sz4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FNP-zQ-WMn">
                             <connections>
                                 <segue destination="4fR-op-Jst" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="9dK-7y-bjn"/>
@@ -233,7 +233,7 @@
                             <outlet property="delegate" destination="TSk-CK-Kb6" id="sh8-Cq-Zlu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Place" id="xQf-D4-Si9">
+                    <navigationItem key="navigationItem" title="New Place" largeTitleDisplayMode="always" id="xQf-D4-Si9">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kko-jD-mLl">
                             <connections>
                                 <action selector="cancelAction:" destination="TSk-CK-Kb6" id="D1O-9b-Eho"/>
@@ -262,8 +262,8 @@
         <scene sceneID="v2Z-x8-0mp">
             <objects>
                 <navigationController id="EDM-nM-QNo" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eRy-0o-UfC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eRy-0o-UfC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="24"/>
@@ -297,7 +297,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4tE-5v-wSH"/>
+        <segue reference="fJL-da-O5H"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="195" height="196"/>
