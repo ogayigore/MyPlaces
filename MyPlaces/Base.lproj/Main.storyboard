@@ -186,6 +186,7 @@
                         <outlet property="placeLocationTF" destination="z8g-Rw-Hvo" id="7UU-EK-qBp"/>
                         <outlet property="placeNameTF" destination="w6T-P3-qOg" id="Nvl-aB-OF1"/>
                         <outlet property="placeTypeTF" destination="yg7-ki-Yil" id="zIW-9V-cC0"/>
+                        <outlet property="ratingControl" destination="Ari-6E-k3G" id="LsJ-1b-2MK"/>
                         <outlet property="saveButton" destination="OA4-ZY-OWh" id="852-UR-JCZ"/>
                     </connections>
                 </tableViewController>
