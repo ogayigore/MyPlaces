@@ -18,6 +18,7 @@
 		418AEEDD24EA9199008BDC65 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AEEDC24EA9199008BDC65 /* NewPlaceViewController.swift */; };
 		418AEEDF24EAA73F008BDC65 /* StarageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AEEDE24EAA73F008BDC65 /* StarageManager.swift */; };
 		418AEEE124EBF4EA008BDC65 /* RaitingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AEEE024EBF4EA008BDC65 /* RaitingControl.swift */; };
+		418AEEE324EC108A008BDC65 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AEEE224EC108A008BDC65 /* MapViewController.swift */; };
 		F1A171FA5BBD6E954C75FE96 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521974ECE9BF6AC2A87E38A7 /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		418AEEDC24EA9199008BDC65 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		418AEEDE24EAA73F008BDC65 /* StarageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarageManager.swift; sourceTree = "<group>"; };
 		418AEEE024EBF4EA008BDC65 /* RaitingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingControl.swift; sourceTree = "<group>"; };
+		418AEEE224EC108A008BDC65 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		521974ECE9BF6AC2A87E38A7 /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABEED7EB3D2AAF92B1D0634 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				418AEEC424E69DC8008BDC65 /* SceneDelegate.swift */,
 				418AEED624E6A666008BDC65 /* MainViewController.swift */,
 				418AEEDC24EA9199008BDC65 /* NewPlaceViewController.swift */,
+				418AEEE224EC108A008BDC65 /* MapViewController.swift */,
 				418AEEDA24EA8686008BDC65 /* PlaceModel.swift */,
 				418AEEDE24EAA73F008BDC65 /* StarageManager.swift */,
 				418AEED824E6B264008BDC65 /* CustomTableViewCell.swift */,
@@ -225,6 +228,7 @@
 				418AEEDD24EA9199008BDC65 /* NewPlaceViewController.swift in Sources */,
 				418AEEC324E69DC8008BDC65 /* AppDelegate.swift in Sources */,
 				418AEEDB24EA8686008BDC65 /* PlaceModel.swift in Sources */,
+				418AEEE324EC108A008BDC65 /* MapViewController.swift in Sources */,
 				418AEEDF24EAA73F008BDC65 /* StarageManager.swift in Sources */,
 				418AEED924E6B264008BDC65 /* CustomTableViewCell.swift in Sources */,
 				418AEEE124EBF4EA008BDC65 /* RaitingControl.swift in Sources */,
