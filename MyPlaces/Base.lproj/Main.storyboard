@@ -164,9 +164,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="251.99999999999997" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ari-6E-k3G" customClass="RaitingControl" customModule="MyPlaces" customModuleProvider="target">
-                                                    <rect key="frame" x="61.666666666666657" y="48" width="251.99999999999997" height="44"/>
-                                                </stackView>
                                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="sdo-6K-dbz" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="102.66666666666669" y="55" width="170" height="30"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -183,14 +180,7 @@
                                             <constraints>
                                                 <constraint firstItem="sdo-6K-dbz" firstAttribute="centerX" secondItem="6xF-8w-WtA" secondAttribute="centerX" id="DMS-Yd-3NP"/>
                                                 <constraint firstItem="sdo-6K-dbz" firstAttribute="centerY" secondItem="6xF-8w-WtA" secondAttribute="centerY" id="S75-bo-akr"/>
-                                                <constraint firstItem="Ari-6E-k3G" firstAttribute="centerY" secondItem="6xF-8w-WtA" secondAttribute="centerY" id="j7r-91-Cto"/>
-                                                <constraint firstItem="Ari-6E-k3G" firstAttribute="centerX" secondItem="6xF-8w-WtA" secondAttribute="centerX" id="xMd-dy-PZG"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="Ari-6E-k3G"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -219,7 +209,6 @@
                         <outlet property="placeLocationTF" destination="z8g-Rw-Hvo" id="7UU-EK-qBp"/>
                         <outlet property="placeNameTF" destination="w6T-P3-qOg" id="Nvl-aB-OF1"/>
                         <outlet property="placeTypeTF" destination="yg7-ki-Yil" id="zIW-9V-cC0"/>
-                        <outlet property="ratingControl" destination="Ari-6E-k3G" id="LsJ-1b-2MK"/>
                         <outlet property="saveButton" destination="OA4-ZY-OWh" id="852-UR-JCZ"/>
                     </connections>
                 </tableViewController>
@@ -251,13 +240,26 @@
                                     <action selector="closeVC" destination="wnS-tT-d0I" eventType="touchUpInside" id="hqn-Ya-ydz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHy-FF-PIW">
+                                <rect key="frame" x="285" y="688" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bPj-t5-GNF"/>
+                                    <constraint firstAttribute="height" constant="50" id="eCj-kH-igb"/>
+                                </constraints>
+                                <state key="normal" image="Location"/>
+                                <connections>
+                                    <action selector="enterViewInUserLocation" destination="wnS-tT-d0I" eventType="touchUpInside" id="wtn-eX-8tp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="TCR-uh-Zgv" firstAttribute="top" secondItem="KQT-7u-W7H" secondAttribute="top" id="56U-Da-J2M"/>
                             <constraint firstItem="F5v-ra-UA6" firstAttribute="trailing" secondItem="4c2-5r-f68" secondAttribute="trailing" constant="40" id="5VX-b8-mJr"/>
+                            <constraint firstItem="F5v-ra-UA6" firstAttribute="trailing" secondItem="bHy-FF-PIW" secondAttribute="trailing" constant="40" id="NTH-8k-QAo"/>
                             <constraint firstAttribute="bottom" secondItem="TCR-uh-Zgv" secondAttribute="bottom" id="QSn-0E-rif"/>
                             <constraint firstItem="TCR-uh-Zgv" firstAttribute="leading" secondItem="F5v-ra-UA6" secondAttribute="leading" id="WAb-1k-UBh"/>
+                            <constraint firstItem="F5v-ra-UA6" firstAttribute="bottom" secondItem="bHy-FF-PIW" secondAttribute="bottom" constant="40" id="bwT-s9-kq5"/>
                             <constraint firstItem="TCR-uh-Zgv" firstAttribute="trailing" secondItem="F5v-ra-UA6" secondAttribute="trailing" id="eTq-B0-Goh"/>
                             <constraint firstItem="4c2-5r-f68" firstAttribute="top" secondItem="F5v-ra-UA6" secondAttribute="top" constant="40" id="mlV-Ju-31b"/>
                         </constraints>
@@ -447,6 +449,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="Location" width="128" height="128"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
         <image name="camcel" width="128" height="128"/>
         <image name="map" width="50" height="50"/>
